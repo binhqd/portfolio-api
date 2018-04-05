@@ -10,29 +10,39 @@
       "loopback/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
-      "./mixins"
+      "./mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "../node_modules/loopback-counts-mixin"
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb",
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
-    "public": false,
+    "dataSource": "mongodb",
+    "public": true,
     "options": {
       "strictObjectIDCoercion": true
-    }
+    },
+    "acls": [
+
+    ]
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
+  },
+  "user": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
