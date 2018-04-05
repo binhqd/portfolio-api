@@ -1,0 +1,47 @@
+{
+  "name": "Project",
+  "plural": "projects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "url": {
+      "type": "string"
+    },
+    "techstack": {
+      "type": [
+        "string"
+      ]
+    },
+    "files": {
+      "type": [
+        "object"
+      ]
+    },
+    "duration": {
+      "type": "number"
+    },
+    "market": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
