@@ -48,8 +48,8 @@
     "./middleware/error-logger": {},
     "strong-error-handler": {
       "params": {
-        "debug": false,
-        "log": false
+        "debug": true,
+        "log": true
       }
     }
   }

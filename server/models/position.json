@@ -1,7 +1,7 @@
 {
   "name": "Position",
   "plural": "positions",
-  "base": "Model",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
