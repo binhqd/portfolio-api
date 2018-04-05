@@ -33,15 +33,25 @@
     "options": {
       "strictObjectIDCoercion": true
     },
-    "acls": [
-
-    ]
+    "acls": []
   },
   "Role": {
     "dataSource": "mongodb",
     "public": false
   },
   "user": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Position": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Project": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Techstack": {
     "dataSource": "mongodb",
     "public": true
   }
