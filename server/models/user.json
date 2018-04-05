@@ -10,7 +10,7 @@
   },
   "scope": {
     "include": [
-
+      "positions"
     ]
   },
   "properties": {
@@ -32,7 +32,11 @@
   },
   "validations": [],
   "relations": {
-
+    "positions": {
+      "type": "hasMany",
+      "model": "Position",
+      "foreignKey": "userId"
+    }
   },
   "acls": [
     {
