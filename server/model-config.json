@@ -33,11 +33,28 @@
     "options": {
       "strictObjectIDCoercion": true
     },
-    "acls": []
+    "acls": [
+      {
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": ""
+      }
+    ]
   },
   "Role": {
     "dataSource": "mongodb",
-    "public": false
+    "public": false,
+    "acls": [
+      {
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": ""
+      }
+    ]
   },
   "user": {
     "dataSource": "mongodb",

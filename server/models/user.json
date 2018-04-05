@@ -10,7 +10,7 @@
   },
   "scope": {
     "include": [
-      "mainBusiness"
+
     ]
   },
   "properties": {
@@ -32,18 +32,15 @@
   },
   "validations": [],
   "relations": {
-    "positions": {
-      "type": "embedsMany",
-      "model": "Position",
-      "property": "positions",
-      "options": {
-        "validate": true,
-        "forceId": false
-      }
-    }
+
   },
   "acls": [
-
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
   ],
   "methods": {
 
